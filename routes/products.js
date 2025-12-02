@@ -15,6 +15,6 @@ const upload = multer({ storage });
 router.post('/', protect, addProduct);        // Add product (seller)
 router.get('/', getProducts);                                          // General browsing
 router.get('/:id', getProduct);                                        // Single product
-router.get('/my/dashboard', protect, getMyProducts);                   // Seller dashboard
+router.get('/my-products', protect, getMyProducts);                   // Seller dashboard
 
 module.exports = router;
