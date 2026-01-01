@@ -19,6 +19,9 @@ const app = express();
 
 app.use(cors());
 
+app.get("/", (req, res) => {
+    res.send("Kuldeep Backend");
+})
 app.options('*', cors());
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
