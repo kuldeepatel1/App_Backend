@@ -3,7 +3,6 @@ const Product = require('../models/Product');
 exports.addProduct = async (req, res, next) => {
   try {
     const { name, price, description, image } = req.body;
-console.log("req.body",req.body);
 
     // if (!image) {
     //   return res.status(400).json({ message: "Image is required" });
